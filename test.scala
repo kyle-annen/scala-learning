@@ -11,6 +11,6 @@ class Calculator(brand: String) {
     def add(m: Int, n: Int): Int = m + n
 }
 
-val calc = new Calculator("HP")
-
-calc.color
+class ScientificCalculator(brand: String) extends Calculator(brand) {
+    def log(m: Double, base: Double) = math.log(m) / math.log(base)
+}
